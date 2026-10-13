@@ -1,6 +1,17 @@
 <h2>Progress Notes</h2>
  
 <form [formGroup]="progressForm">
+
+    <div>
+        <label for="project-code">Project Code:</label>
+        <input
+            id="project-code"
+            type="text"
+            formControlName="projectCode"
+            (blur)="updateProjectName()">
+    </div>
+
+     <p style="color:red;"> {{ errorMessage }} </p>
  
     <div>
         <label for="project-name">Project Name:</label>
@@ -38,14 +49,24 @@
             type="text"
             formControlName="teamMember">
     </div>
+
+
  
-    <div>
+    <!-- <div>
         <label for="note">Progress Note:</label>
         <textarea
             id="note"
             rows="4"
             formControlName="progressNote">
         </textarea>
-    </div>
- 
+    </div> -->
+    <div>
+        <label for="progress-notes">Progress Note:</label>
+        <input
+            id="progress-notes"
+            type="text"
+            [(ngModel)]="progressNotes">
+
+        <p>Current Note: {{ progressNotes }}</p>
+    </div>
 </form>
