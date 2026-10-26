@@ -4,9 +4,10 @@ import { MilestoneTracker } from './milestone-tracker/milestone-tracker';
 import { ProgressNotes } from './progress-notes/progress-notes';
 import { ProjectOverview } from './project-overview/project-overview';
 import { TechnologyChecklist } from './technology-checklist/technology-checklist';
+import { MilestoneApi } from './milestone-api/milestone-api';
 
 @Component({
-  imports: [RouterOutlet, MilestoneTracker, ProgressNotes, ProjectOverview, TechnologyChecklist],
+  imports: [RouterOutlet, MilestoneTracker, ProgressNotes, ProjectOverview, TechnologyChecklist, MilestoneApi],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
