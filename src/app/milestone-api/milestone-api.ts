@@ -2,12 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { MilestoneService, Milestone } from '../milestone';
-import {
-  ReactiveFormsModule,
-  FormGroup,
-  FormControl
-} from '@angular/forms';
-
+import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -16,14 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-milestone-api',
   standalone: true,
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-    MatButtonModule
-  ],
+  imports: [ CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatButtonModule],
   templateUrl: './milestone-api.html',
   styleUrl: './milestone-api.css'
 })
